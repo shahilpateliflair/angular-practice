@@ -7,6 +7,8 @@ import { DataTypesComponent } from './data-types/data-types.component';
 import { ArrayToObjectComponent } from './array-to-object/array-to-object.component';
 import { ParentComponent } from './partial/parent/parent.component';
 import { ChildComponent } from './partial/child/child.component';
+import { NotFoundComponent } from './component/not-found/not-found.component';
+import { NodataComponent } from './component/nodata/nodata.component';
 
 const routes: Routes = [
   {
@@ -34,9 +36,18 @@ const routes: Routes = [
     component: ChildComponent,
   },
   {
+    path: 'notfound',
+    component: NotFoundComponent,
+  },
+  {
+    path: 'nodata',
+    component: NodataComponent,
+  },
+  {
     path: 'arrayToObject',
     component: ArrayToObjectComponent,
   },
+  
 ];
 
 @NgModule({

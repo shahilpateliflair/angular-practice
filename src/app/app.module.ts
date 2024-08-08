@@ -15,6 +15,9 @@ import { DataTypesComponent } from './data-types/data-types.component';
 import { ArrayToObjectComponent } from './array-to-object/array-to-object.component';
 import { ParentComponent } from './partial/parent/parent.component';
 import { ChildComponent } from './partial/child/child.component';
+import { LazyLoadingComponent } from './folder/lazy-loading/lazy-loading.component';
+import { NotFoundComponent } from './component/not-found/not-found.component';
+import { NodataComponent } from './component/nodata/nodata.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,10 @@ import { ChildComponent } from './partial/child/child.component';
     DataTypesComponent,
     ArrayToObjectComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    LazyLoadingComponent,
+    NotFoundComponent,
+    NodataComponent
   ],
   imports: [
     BrowserModule,
