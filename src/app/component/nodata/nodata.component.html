@@ -1,0 +1,8 @@
+<div *ngIf="data.length === 0; else dataList" >
+  <app-not-found message="No data available"></app-not-found>
+</div>
+<ng-template #dataList >
+  <ul style="list-style-type: none;">
+    <li *ngFor="let item of data">{{ item }}</li>
+  </ul>
+</ng-template>
