@@ -1,0 +1,47 @@
+<!-- <div>
+    <h3>Type Conversion Example</h3>
+    <p>Original String Value: {{ stringValue }}</p>
+    <p>Converted to Number: {{ convertedToNumber }}</p>
+    <p>Original Number Value: {{ numberValue }}</p>
+    <p>Converted to String: {{ convertedToString }}</p>
+  </div>
+   -->
+
+
+   <!-- <div>
+    <h3>Type Conversion Example</h3>
+    
+    <div>
+      <label for="stringInput">String Input:</label>
+      <input id="stringInput" [(ngModel)]="stringInput" (ngModelChange)="convertStringToNumber()" type="text">
+      <p>Converted to Number: {{ convertedToNumber }}</p>
+    </div>
+  
+    <div>
+      <label for="numberInput">Number Input:</label>
+      <input id="numberInput" [(ngModel)]="numberInput" (ngModelChange)="convertNumberToString()" type="number">
+      <p>Converted to String: {{ convertedToString }}</p>
+    </div>
+  </div> -->
+  
+
+  <div>
+    <h3>Type Conversion Example</h3>
+  
+    <!-- String to Object Conversion -->
+    <div>
+      <label for="stringInput">String Input (JSON format):</label>
+      <textarea id="stringInput" [(ngModel)]="stringInput" (ngModelChange)="convertStringToObject()" rows="4" cols="50"></textarea>
+      <p>Converted Object:</p>
+      <pre>{{ convertedObject | json }}</pre>
+    </div>
+  
+    <!-- Object to String Conversion -->
+    <div>
+      <label for="objectInput">Object Input (Enter key-value pairs):</label>
+      <textarea id="objectInput" [(ngModel)]="objectInput" (ngModelChange)="convertObjectToString()" rows="4" cols="50"></textarea>
+      <p>Converted String (JSON format):</p>
+      <pre>{{ convertedString }}</pre>
+    </div>
+  </div>
+  

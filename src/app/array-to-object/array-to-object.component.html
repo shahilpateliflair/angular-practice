@@ -1,0 +1,24 @@
+<div>
+    <h3>Array to Object and Object to Array Conversion Example</h3>
+  
+    <!-- Array to Object Conversion -->
+    <div>
+      <label for="arrayInput">Array Input (JSON format):</label>
+      <textarea id="arrayInput" [(ngModel)]="arrayInput" (ngModelChange)="convertArrayToObject()" rows="4" cols="50">
+        ["Apple", "Banana", "Cherry"]
+      </textarea>
+      <p>Converted Object:</p>
+      <pre>{{ convertedObject | json }}</pre>
+    </div>
+  
+    <!-- Object to Array Conversion -->
+    <div>
+      <label for="objectInput">Object Input (JSON format):</label>
+      <textarea id="objectInput" [(ngModel)]="objectInput" (ngModelChange)="convertObjectToArray()" rows="4" cols="50">
+        { "name": "Alice", "age": 25, "city": "New York" }
+      </textarea>
+      <p>Converted Array:</p>
+      <pre>{{ convertedArray | json }}</pre>
+    </div>
+  </div>
+  
